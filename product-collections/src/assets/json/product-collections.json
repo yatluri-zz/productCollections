@@ -1,0 +1,762 @@
+{
+    "productCollection": [
+        {
+            "Id": 436,
+            "SubTypeCode": "none",
+            "CompanyId": 601497,
+            "StatusCode": "INAC",
+            "BussinessLevelCode": "COMP",
+            "UserId": 0,
+            "Description": "Caroline's test",
+            "Name": "1",
+            "MediaId": "0",
+            "MediaPath": "",
+            "UserdOnCompanyStore": false,
+            "ProductCount": 0,
+            "WebsiteCout": 0,
+            "DisplaySequence": 0,
+            "IsVisible": true
+        },
+        {
+            "Id": 308,
+            "SubTypeCode": "none",
+            "CompanyId": 601497,
+            "StatusCode": "ACTV",
+            "BussinessLevelCode": "COMP",
+            "UserId": 0,
+            "Description": "1.2346+99",
+            "Name": "2012 Andrei",
+            "MediaId": "5919887",
+            "MediaPath": "5919887",
+            "UserdOnCompanyStore": true,
+            "ProductCount": 8,
+            "WebsiteCout": 5,
+            "DisplaySequence": null,
+            "IsVisible": true
+        }
+    ],
+    "websites": [
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-espwebsite.com.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "138991-2A4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "bob2a4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "bobtest.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3280,
+            "Domain_Name": "125724-2A8.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3280,
+            "Domain_Name": "cmpstore.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "125724-2A9.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "abuy.local-logoshop.com.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "uytsssss.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3294,
+            "Domain_Name": "125724-2AM.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3300,
+            "Domain_Name": "125724-2AS.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3300,
+            "Domain_Name": "125724-2AS.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3301,
+            "Domain_Name": "125724-2AT.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3301,
+            "Domain_Name": "125724-2AT.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3302,
+            "Domain_Name": "125724-2AU.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3348,
+            "Domain_Name": "101574-2C4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3349,
+            "Domain_Name": "101574-2C5.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3350,
+            "Domain_Name": "101574-2C6.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3351,
+            "Domain_Name": "101574-2C7.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3356,
+            "Domain_Name": "138991-2CC.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3357,
+            "Domain_Name": "138991-2CD.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3370,
+            "Domain_Name": "125724-2CQ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3394,
+            "Domain_Name": "101574-2DE.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3396,
+            "Domain_Name": "101574-2DG.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3399,
+            "Domain_Name": "138991-2DJ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3399,
+            "Domain_Name": "bobtest.Local-LogoShop.com"
+        },
+        {
+            "Application_Id": 3411,
+            "Domain_Name": "101574-2DV.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3411,
+            "Domain_Name": "101574-2DV.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3412,
+            "Domain_Name": "101574-2DW.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3413,
+            "Domain_Name": "101574-2DX.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3415,
+            "Domain_Name": "279600-2DZ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3422,
+            "Domain_Name": "101574-2E6.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3424,
+            "Domain_Name": "101574-2E8.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3425,
+            "Domain_Name": "101574-2E9.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3426,
+            "Domain_Name": "101574-2EA.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3432,
+            "Domain_Name": "125724-2EG.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3434,
+            "Domain_Name": "125724-2EI.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3436,
+            "Domain_Name": "125724-2EK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3442,
+            "Domain_Name": "138991-2EQ.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3443,
+            "Domain_Name": "138991-2ER.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3444,
+            "Domain_Name": "138991-2ES.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3445,
+            "Domain_Name": "138991-2ET.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3446,
+            "Domain_Name": "138991-2EU.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3447,
+            "Domain_Name": "138991-2EV.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3448,
+            "Domain_Name": "138991-2EW.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3450,
+            "Domain_Name": "138991-2EY.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3451,
+            "Domain_Name": "138991-2EZ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3453,
+            "Domain_Name": "138991-2F1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3469,
+            "Domain_Name": "101574-2FH.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3471,
+            "Domain_Name": "101574-2FJ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3472,
+            "Domain_Name": "101574-2FK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3474,
+            "Domain_Name": "125724-2FM.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3474,
+            "Domain_Name": "125724-2FM.Local-espwebsite.com.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com.local-espwebsite.com.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3481,
+            "Domain_Name": "475002-2FT.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3486,
+            "Domain_Name": "125724-2FY.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3488,
+            "Domain_Name": "125724-2G0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3496,
+            "Domain_Name": "125724-2G8.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3524,
+            "Domain_Name": "125724-2H0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3525,
+            "Domain_Name": "125724-2H1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3526,
+            "Domain_Name": "125724-2H2.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3537,
+            "Domain_Name": "2HD.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3538,
+            "Domain_Name": "2HE.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3582,
+            "Domain_Name": "125724-2IM.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3583,
+            "Domain_Name": "125724-2IN.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3585,
+            "Domain_Name": "konscompanystore1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3597,
+            "Domain_Name": "101574-2J0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3600,
+            "Domain_Name": "125724-2J3.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3601,
+            "Domain_Name": "125724-2J4.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3643,
+            "Domain_Name": "localShopping.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3644,
+            "Domain_Name": "punchout.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3699,
+            "Domain_Name": "125724-2LS.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3707,
+            "Domain_Name": "MSA-CS01.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3738,
+            "Domain_Name": "125724-2MU.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3815,
+            "Domain_Name": "300094-2OZ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3851,
+            "Domain_Name": "125724-2PR.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3919,
+            "Domain_Name": "125724-2RU.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4018,
+            "Domain_Name": "125724-2UK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4054,
+            "Domain_Name": "125724-2VI.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4091,
+            "Domain_Name": "CompanyStore-Nanny.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4102,
+            "Domain_Name": "125724-2WQ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4215,
+            "Domain_Name": "101574-2ZX.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4294,
+            "Domain_Name": "125724-324.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4434,
+            "Domain_Name": "125724-006.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4435,
+            "Domain_Name": "125724-007.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4442,
+            "Domain_Name": "125724-00E.local-logoshop.com"
+        }
+    ],
+    "companyStore": [
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-espwebsite.com.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3274,
+            "Domain_Name": "125724-2A2.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "138991-2A4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "bob2a4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3276,
+            "Domain_Name": "bobtest.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3280,
+            "Domain_Name": "125724-2A8.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3280,
+            "Domain_Name": "cmpstore.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "125724-2A9.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "abuy.local-logoshop.com.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3281,
+            "Domain_Name": "uytsssss.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3294,
+            "Domain_Name": "125724-2AM.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3300,
+            "Domain_Name": "125724-2AS.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3300,
+            "Domain_Name": "125724-2AS.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3301,
+            "Domain_Name": "125724-2AT.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3301,
+            "Domain_Name": "125724-2AT.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3302,
+            "Domain_Name": "125724-2AU.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3348,
+            "Domain_Name": "101574-2C4.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3349,
+            "Domain_Name": "101574-2C5.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3350,
+            "Domain_Name": "101574-2C6.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3351,
+            "Domain_Name": "101574-2C7.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3356,
+            "Domain_Name": "138991-2CC.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3357,
+            "Domain_Name": "138991-2CD.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3370,
+            "Domain_Name": "125724-2CQ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3394,
+            "Domain_Name": "101574-2DE.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3396,
+            "Domain_Name": "101574-2DG.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3399,
+            "Domain_Name": "138991-2DJ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3399,
+            "Domain_Name": "bobtest.Local-LogoShop.com"
+        },
+        {
+            "Application_Id": 3411,
+            "Domain_Name": "101574-2DV.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3411,
+            "Domain_Name": "101574-2DV.local-espwebsite.com.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3412,
+            "Domain_Name": "101574-2DW.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3413,
+            "Domain_Name": "101574-2DX.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3415,
+            "Domain_Name": "279600-2DZ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3422,
+            "Domain_Name": "101574-2E6.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3424,
+            "Domain_Name": "101574-2E8.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3425,
+            "Domain_Name": "101574-2E9.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3426,
+            "Domain_Name": "101574-2EA.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3432,
+            "Domain_Name": "125724-2EG.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3434,
+            "Domain_Name": "125724-2EI.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3436,
+            "Domain_Name": "125724-2EK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3442,
+            "Domain_Name": "138991-2EQ.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3443,
+            "Domain_Name": "138991-2ER.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3444,
+            "Domain_Name": "138991-2ES.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3445,
+            "Domain_Name": "138991-2ET.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3446,
+            "Domain_Name": "138991-2EU.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3447,
+            "Domain_Name": "138991-2EV.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3448,
+            "Domain_Name": "138991-2EW.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3450,
+            "Domain_Name": "138991-2EY.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3451,
+            "Domain_Name": "138991-2EZ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3453,
+            "Domain_Name": "138991-2F1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3469,
+            "Domain_Name": "101574-2FH.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3471,
+            "Domain_Name": "101574-2FJ.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3472,
+            "Domain_Name": "101574-2FK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3474,
+            "Domain_Name": "125724-2FM.Local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3474,
+            "Domain_Name": "125724-2FM.Local-espwebsite.com.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3476,
+            "Domain_Name": "125724-2FO.Local-logoshop.com.local-espwebsite.com.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3481,
+            "Domain_Name": "475002-2FT.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3486,
+            "Domain_Name": "125724-2FY.local-espwebsite.com"
+        },
+        {
+            "Application_Id": 3488,
+            "Domain_Name": "125724-2G0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3496,
+            "Domain_Name": "125724-2G8.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3524,
+            "Domain_Name": "125724-2H0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3525,
+            "Domain_Name": "125724-2H1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3526,
+            "Domain_Name": "125724-2H2.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3537,
+            "Domain_Name": "2HD.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3538,
+            "Domain_Name": "2HE.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3582,
+            "Domain_Name": "125724-2IM.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3583,
+            "Domain_Name": "125724-2IN.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3585,
+            "Domain_Name": "konscompanystore1.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3597,
+            "Domain_Name": "101574-2J0.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3600,
+            "Domain_Name": "125724-2J3.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3601,
+            "Domain_Name": "125724-2J4.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3643,
+            "Domain_Name": "localShopping.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3644,
+            "Domain_Name": "punchout.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3699,
+            "Domain_Name": "125724-2LS.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3707,
+            "Domain_Name": "MSA-CS01.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3738,
+            "Domain_Name": "125724-2MU.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3815,
+            "Domain_Name": "300094-2OZ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3851,
+            "Domain_Name": "125724-2PR.local-logoshop.com"
+        },
+        {
+            "Application_Id": 3919,
+            "Domain_Name": "125724-2RU.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4018,
+            "Domain_Name": "125724-2UK.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4054,
+            "Domain_Name": "125724-2VI.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4091,
+            "Domain_Name": "CompanyStore-Nanny.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4102,
+            "Domain_Name": "125724-2WQ.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4215,
+            "Domain_Name": "101574-2ZX.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4294,
+            "Domain_Name": "125724-324.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4434,
+            "Domain_Name": "125724-006.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4435,
+            "Domain_Name": "125724-007.local-logoshop.com"
+        },
+        {
+            "Application_Id": 4442,
+            "Domain_Name": "125724-00E.local-logoshop.com"
+        }
+    ]
+}

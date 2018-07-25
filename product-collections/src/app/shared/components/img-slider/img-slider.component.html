@@ -1,0 +1,21 @@
+<div id="container">              
+    <div id="grid" class="image-cropper img img-responsive">
+      <div *ngFor="let img of mediaCollection; let i = index" class="container">
+      <img 
+        [@move]="state" 
+        (@move.done)="onFinish($event, img.isSelectedImage)" 
+        (@move.start)="onStart($event)" 
+        class="image"
+        [src]="img.mediaPath"                  
+        alt=""
+        />                  
+        <div class="middle">
+            <div class="tickMarker" (click)="selectedImg($event)">&#10004;</div>
+          </div>                
+    <div>
+      <a id="slider-buttons-left" (click)="moveLeft()">&#10094;</a>
+      <a id="slider-buttons-right" (click)="moveRight()">&#10095;</a>
+    </div>
+  </div>   
+</div>
+</div>

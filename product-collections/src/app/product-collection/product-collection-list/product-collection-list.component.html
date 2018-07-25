@@ -1,0 +1,315 @@
+<br>
+<div class="row" *ngIf="isGlobal else storeProductCollection">
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div>
+          <span class="couponTitle">{{headerString}}</span>
+          <button type="button" class="btn custom-btn btn-primary pull-right" (click)="onCreateCoupon()">
+            <span class="createBtnText">
+              <i id="additionSymbl">&#43;</i> &nbsp;{{btnPrimaryText}}</span>
+          </button>
+          <div class="form-inline">
+            These products will appear lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-xs-9">
+        <form class="form-inline table-top-form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Search" (keyup)='updateFilter($event)'>
+          </div>
+          &nbsp;
+          <div class="btn-group" dropdown [isDisabled]="true">
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle" aria-controls="dropdown-basic">
+              Actions
+              <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+              <li role="menuitem" *ngFor="let gAction of ListGlobalActions">
+                <span class="couponCodeFormBtn" (click)="onDeleteAll()">{{gAction}}</span>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-9 datatable-wrapper">
+        <!-- if you want row to be draggable, just make [classSelector] empty -->
+        <!-- 
+  *REQUIRED attributes for 'dragula-extended.directive.ts'
+  [dragulaName]  - wrap value in 'single' quotes, must be a string
+  [dragulaModel] - your data
+  [classSelector] - if a value, wrap it in 'single' quotes, must be a string
+  (directiveDrop) - the on drop event callback
+  -->
+        <ngx-datatable class="bootstrap" [rows]="productCollections" [columnMode]="'force'" [rowHeight]="50" [selectionType]="checkbox"
+          (select)="onSelect($event)" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'">
+          <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false" [resizeable]="false">
+            <ng-template ngx-datatable-header-template let-value="value">
+              <input #globalProductCheck type="checkbox" [checked]="isGlobalCheck" (change)="onSelect()" />
+            </ng-template>
+            <ng-template ngx-datatable-cell-template let-row="row">
+              <input type="checkbox" [checked]="row.isSelected" (change)="onCheckboxChange(row)" />
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.collection}}" prop="Collection" [width]="100" [resizeable]="false" [canAutoResize]="false"
+            [draggable]="false">
+            <ng-template ngx-datatable-header-template let-column="column" let-sort="sortFn">
+              <span (click)="sort()">{{column.name}}</span>
+            </ng-template>
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.Name}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.level}}" prop="Level" [width]="100" [resizeable]="false" [canAutoResize]="false"
+            [draggable]="false">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.BussinessLevelCode}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.websites}}" prop="websites">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.WebsiteCout}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.products}}" prop="products">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.ProductCount}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.status}}" prop="status">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.StatusCode === 'INAC'? 'InActive': 'Active'}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.action}}" prop="action">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              <div class="btn-group" dropdown>
+                <button type="button" class="btn btn-default" (click)="onSelectedAction(defaultBtn, row)">{{defaultBtn}}</button>
+                <button id="button-split" type="button" dropdownToggle class="btn btn-default dropdown-toggle dropdown-toggle-split" aria-controls="dropdown-split">
+                  <span class="caret"></span>
+                  <span class="sr-only">Split button!</span>
+                </button>
+                <ul id="dropdown-split" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-split">
+                  <li role="menuitem">
+                    <span class="dropdown-item couponCodeFormBtn" (click)="onSelectedAction('Copy', row)">Copy</span>
+                  </li>
+                  <li class="divider dropdown-divider"></li>
+                  <li role="menuitem">
+                    <span class="dropdown-item couponCodeFormBtn" (click)="onSelectedAction('Delete', row)">Delete</span>
+                  </li>
+                </ul>
+              </div>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-footer></ngx-datatable-footer>
+        </ngx-datatable>
+      </div>
+      <div class="col-xs-3" *ngIf="isGlobal">
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" class="btn custom-btn btn-default pull-right">
+              <span class="createBtnText">
+                Clear Filters</span>
+            </button>
+            <h4 class="form-inline">Filters</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5 class="filter1">{{filterNames.level}}</h5>
+            <ul>
+              <li *ngFor="let l of levels">
+                <a>{{l}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5 class="filter1">{{filterNames.website}}</h5>
+            <ul>
+              <li *ngFor="let w of websites">
+                <a>{{w.Domain_Name}}</a>
+              </li>
+            </ul>
+            <a *ngIf="isSeeWebsiteMore" (click)="onSeeMore(filterNames.website)">
+              &#43;See More
+            </a>
+            <a *ngIf="!isSeeWebsiteMore" (click)="onSeeMore(filterNames.website)">
+                &#8722;See Less
+            </a>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+              <h5 class="filter1">{{filterNames.company}}</h5>
+              <ul>
+                <li *ngFor="let c of companyStores">
+                  <a>{{c.Domain_Name}}</a>
+                </li>
+              </ul>
+              <a *ngIf="isSeeCompanyMore" (click)="onSeeMore(filterNames.company)">
+                &#43;See More
+              </a>
+              <a *ngIf="!isSeeCompanyMore" (click)="onSeeMore(filterNames.company)">
+                  &#8722;See Less
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #storeProductCollection>
+  <div class="row">
+    <div class="col-xs-12">
+      <div>
+        <span class="couponTitle">{{headerString}}</span>
+        <button type="button" class="btn custom-btn btn-primary pull-right" (click)="onCreateCoupon()">
+          <span class="createBtnText">
+            <i id="additionSymbl">&#43;</i> &nbsp; {{btnPrimaryText}}</span>
+        </button>
+        <div class="form-inline">
+          These products will appear lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10">
+        <form class="form-inline table-top-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Search" (keyup)='updateFilter($event)'>
+            </div>
+            &nbsp;
+            <div class="btn-group" dropdown [isDisabled]="selectedArrayList.length <= 0">
+                <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle" aria-controls="dropdown-basic">
+                    Actions
+                    <span class="caret"></span>
+                </button>
+                <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+                    <li role="menuitem" *ngFor="let gAction of ListGlobalActions">
+                        <span class="couponCodeFormBtn" (click)="onDeleteAll()">{{gAction}}</span>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-10 datatable-wrapper">    
+<!-- if you want row to be draggable, just make [classSelector] empty -->
+<!-- 
+*REQUIRED attributes for 'dragula-extended.directive.ts'
+[dragulaName]  - wrap value in 'single' quotes, must be a string
+[dragulaModel] - your data
+[classSelector] - if a value, wrap it in 'single' quotes, must be a string
+(directiveDrop) - the on drop event callback
+-->
+<ngx-datatable
+    class="bootstrap"
+    *ngIf="renderTable"
+    dragulaName
+    [rows]="productCollections"
+    [columnMode]="'force'"
+    [rowHeight]="50"
+    [dragulaName]="'bag'"
+    [trackByProp]="id"
+    [dragulaModel]="productCollections"
+    [classSelector]=""
+    (directiveDrop)="onDrop($event)"
+    (directiveDrag)="onDrag($event)"
+    [selectionType]="checkbox"       
+    [loadingIndicator]="true"
+    (select)="onSelect($event)"
+    [headerHeight]="50"
+     [footerHeight]="50" 
+     [rowHeight]="'auto'">         
+      <ngx-datatable-column name="" [width]="30" [canAutoResize]="false" [resizeable]="false">
+          <ng-template let-row="row" let-rowIndex="rowIndex" ngx-datatable-cell-template>
+              <span [attr.data-productId]="row.Id"  class="glyphicon glyphicon-menu-hamburger isDragable" [attr.data-rowIndex]="rowIndex"></span>
+          </ng-template>             
+      </ngx-datatable-column>
+      <ngx-datatable-column [width]="40" [canAutoResize]="false" [resizeable]="false"> 
+            <ng-template ngx-datatable-header-template let-value="value"  let-allRowsSelected="allRowsSelected" let-selectFn="selectFn">
+                    <input  type="checkbox"  [checked]="allRowsSelected" (change)="selectFn(!allRowsSelected)" />
+                </ng-template>
+                <ng-template ngx-datatable-cell-template let-row="row"  let-isSelected="isSelected" >                            
+                    <input type="checkbox" [checked]="isSelected"  (change)="onCheckboxChange(row)" />                        
+                </ng-template>
+      </ngx-datatable-column>         
+      <ngx-datatable-column name="{{columnName.collection}}" prop="Collection" [width]="100" [resizeable]="false" [canAutoResize]="false">
+            <ng-template ngx-datatable-header-template let-column="column" let-sort="sortFn">
+              <span (click)="sort()">{{column.name}}</span>
+            </ng-template>
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.Name}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.level}}" prop="Level" [width]="100" [resizeable]="false" [canAutoResize]="false">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.BussinessLevelCode}}
+            </ng-template>
+          </ngx-datatable-column>          
+          <ngx-datatable-column name="{{columnName.products}}" prop="products">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.ProductCount}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.status}}" prop="status">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              {{row.StatusCode === 'INAC'? 'InActive': 'Active'}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="{{columnName.action}}" prop="action">
+            <ng-template ngx-datatable-cell-template let-row="row">
+              <div class="btn-group" dropdown>
+                <button type="button" class="btn btn-default" (click)="onSelectedAction(defaultBtn, row)">{{defaultBtn}}</button>
+                <button id="button-split" type="button" dropdownToggle class="btn btn-default dropdown-toggle dropdown-toggle-split" aria-controls="dropdown-split">
+                  <span class="caret"></span>
+                  <span class="sr-only">Split button!</span>
+                </button>
+                <ul id="dropdown-split" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-split">
+                  <li role="menuitem">
+                    <span class="dropdown-item couponCodeFormBtn" (click)="onSelectedAction('Copy', row)">Copy</span>
+                  </li>
+                  <li class="divider dropdown-divider"></li>
+                  <li role="menuitem">
+                    <span class="dropdown-item couponCodeFormBtn" (click)="onSelectedAction('Delete', row)">Delete</span>
+                  </li>
+                </ul>
+              </div>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-footer></ngx-datatable-footer>  
+  </ngx-datatable>      
+</div>
+</div>
+
+<br>
+<div class="row">
+<div class="col-xs-6">
+   <h4>Drage and drop</h4>
+   <ul>
+       <li>
+           <label>productId</label>
+           {{afterSort.productId}}
+       </li>
+       <li>
+           <label>CurrentIndex</label>
+           {{afterSort.currentIndex}}
+       </li>
+       <li>
+           <label>PreviousIndex</label>
+           {{afterSort.previousIndex}}
+       </li>
+   </ul>
+</div>
+</div>
+</ng-template>

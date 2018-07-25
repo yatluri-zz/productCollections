@@ -1,0 +1,84 @@
+// defining the global colors;
+$table-border-color: #dadada;
+$custom-checkbox-bg-color: #eee;
+$custom-checkbox-hvr-bg-color: #ccc;
+$custom-checkbox-checked-bg-color:#2196F3;
+$custom-color-white:  white;
+$custom-gray-color: gray;
+$custom-color-77889:#778899;
+$custom-color-ddd: #ddd;
+$custom-color-fff: #fff;
+$custom-color-black:#000000;
+.pc-img{
+    float: left;
+}
+
+.btns{
+   margin:5px !important; 
+}
+
+.panel-border{
+border: 1px solid $table-border-color;
+}
+
+.collectionCodeForm{
+    width: 100%;
+	resize: none !important;
+}
+.panelHeader{
+    font-size: x-large !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.checkBoxContainer{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: small;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkBoxContainer input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $custom-checkbox-bg-color;
+}
+.checkBoxContainer:hover input ~ .checkmark{
+    background-color: $custom-checkbox-hvr-bg-color;
+}
+
+.checkBoxContainer input:checked ~ .checkmark{
+    background-color: $custom-checkbox-checked-bg-color;
+}
+.checkmark::after{
+    content:"";
+    position: absolute;
+    display:none;
+}
+.checkBoxContainer input:checked ~.checkmark:after{
+    display: block;
+}
+
+.checkBoxContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid $custom-color-white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

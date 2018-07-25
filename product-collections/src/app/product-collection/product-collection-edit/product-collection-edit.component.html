@@ -1,0 +1,89 @@
+<div class="row">
+  <a routerLink="productCollections">
+    < Back to product collections</a>
+</div>
+<br/>
+<br/>
+<div class="row">
+  <div class="col-xs-6">
+    <img [src]="imgSrc" alt="Image cannot be loaded" class="img img-responsive img-thumbnail col-xs-2" height="70" width="80"
+    />
+    <div class="col-xs-8">
+      <h4 class="collectionTitle">{{productCollectionName}}</h4>
+      <div class="form-inline">
+        Created By: Emma Jenkins Modified: 01/05/2018
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="pull-right">
+      <button class="btn btn-defualt btns">Cancel</button>
+      <button class="btn btn-primary btns">Save</button>
+    </div>
+  </div>
+
+</div>
+<br/>
+<div class="row">
+  <div class="col-xs-6">
+    <div class="col-xs-12 panel-border">
+      <div class="col-xs-12 panelHeader">
+        <span>{{propHeader}}</span>
+      </div>
+      <br/>
+      <div class="col-xs-12">
+        <form [formGroup]="productDetailForm">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="collectionName">{{collectionName}}</label>
+                <div class="form-inline">
+                  <input type="text" class="form-control collectionCodeForm" formControlName="collectionName">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="level">Level</label>
+                <div class="form-inline">
+                  <select (change)="onLevelChange()" class="form-control collectionCodeForm" formControlName="collectionLevel">
+                    <option *ngFor='let c of productLevels' [value]="c">{{c}}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="description">Description</label>
+                <div class="form-inline">
+                  <textarea class="form-control collectionCodeForm" formControlName="description" maxlength="1500"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12" *ngIf="!isGlobal">
+              <div class="form-group">
+                <label class="checkBoxContainer">
+                  Show collection on Home page
+                  <input type="checkbox" [checked]="!isGlobal" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="col-xs-12 panel-border">
+      <div class="col-xs-12 panelHeader">
+        <span>{{imageHeader}}</span>
+      </div>
+      <div class="col-xs-12">
+        <span>{{imageDesc}}</span>
+      </div>
+      <div class="col-xs-12">
+        <app-img-slider [mediaCollection]="mediaCollection"></app-img-slider>  
+  </div>
+</div>
+
